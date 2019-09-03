@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ApiSettingsController.cs" />
+    <Compile Remove="Controllers\ChangePasswordController.cs" />
+    <Compile Remove="Controllers\MyProtectedAdminApiController.cs" />
+    <Compile Remove="Controllers\MyProtectedApiController.cs" />
+    <Compile Remove="Controllers\MyProtectedEditorsApiController.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NB.Config\NB.Config.csproj" />
+    <ProjectReference Include="..\NB.ServiceLayer\NB.ServiceLayer.csproj" />
+  </ItemGroup>
+
+</Project>
