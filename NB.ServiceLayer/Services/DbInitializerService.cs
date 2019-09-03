@@ -57,8 +57,8 @@ namespace NB.Services
                     {
                         var adminUser = new User
                         {
-                            Username = "Nahid",
-                            DisplayName = "ناهید",
+                            Username = "NetBar",
+                            DisplayName = "نت بار",
                             IsActive = true,
                             LastLoggedIn = null,
                             Password = _securityService.GetSha256Hash("1234"),
